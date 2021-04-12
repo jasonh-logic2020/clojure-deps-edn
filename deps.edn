@@ -747,6 +747,12 @@
                  lambdaisland/kaocha-cljs {:mvn/version "1.0.71"}}
    :main-opts   ["-m" "kaocha.runner"]}
 
+  :test/kaocha-cljs2
+  {:extra-paths ["test"]
+   :extra-deps  {lambdaisland/kaocha       {:mvn/version "1.0.732"}
+                 lambdaisland/kaocha-cljs2 {:mvn/version "0.0.35"}}
+   :main-opts   ["-m" "kaocha.runner"]}
+
   ;; https://github.com/lambdaisland/kaocha-cucumber
   ;; clojure -M:test/kaocha-cucumber
   :test/kaocha-cucumber
